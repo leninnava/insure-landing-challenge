@@ -1,0 +1,189 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul, li {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Variables */
+
+:root {
+    --primary-color-darkviolet: hsl(256, 26%, 20%); 
+    --primary-color-grayishblue: hsl(216,30%, 68%);
+    --neutral-color-verydarkviolet: hsl(270, 9%, 17%);
+    --neutral-color-darkgrayishviolet: hsl(273, 4%, 51%);
+    --neutral-color-verylightgray: hsl(0, 0%, 98%);
+    --base-font-size: 1rem;
+}
+
+/* Utility classes */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Base styling */
+
+body {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    background: var(--neutral-color-verylightgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1,h2,h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+}
+
+a {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .08rem;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    background: var(--primary-color-darkviolet);
+    color: var(--neutral-color-verylightgray);
+    height: 35.7rem;
+    z-index: 3;
+    margin-bottom: 12rem;
+}
+
+.header-waves {
+    background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 28rem;
+    right: 0;
+    height: 40rem;
+    top: -2rem;
+    z-index: 4;
+}
+
+.header-waves-left {
+    background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 28rem;
+    height: 34rem;
+    left: -16rem;
+    bottom: 19rem;
+    z-index: 4;
+}
+
+
+.wrapper {
+    padding: 0 12%;
+}
+
+nav {
+    height: 4.7rem;
+    width: 100%;
+    padding: 0 12%;
+    background: var(--neutral-color-verylightgray);
+    z-index: 4;
+}
+
+nav > div > li > a {
+    margin-left: 1.6rem;
+    color: var(--neutral-color-darkgrayishviolet);
+}
+
+nav > div > li > a:hover {
+    color: var(--neutral-color-verydarkviolet);
+}
+
+.button-link {
+    color: var(--primary-color-darkviolet);
+    padding: .7rem 1.6rem;
+    border: solid .1rem var(--primary-color-darkviolet);
+    transition: color, background, cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
+}
+
+.button-link:hover {
+  background: var(--neutral-color-verydarkviolet);
+  color: var(--neutral-color-verylightgray);
+}
+
+.header-content > div > .button-link {
+    color: var(--neutral-color-verylightgray);
+    border-color: var(--neutral-color-verylightgray);
+}
+
+.header-content > div > .button-link:hover {
+    color: var(--neutral-color-verydarkviolet);
+    background: var(--neutral-color-verylightgray);
+}
+
+.header-content > div > h1 {
+    font-size: 4.2rem;
+    line-height: 3.8rem;
+    margin-bottom: 1.2rem;
+    margin-right: 1rem;
+}
+
+.header-content > div > p {
+    font-size: .95rem;
+    line-height: 1.6rem;
+    margin-bottom: 2.2rem;
+    margin-right: 1rem;
+}
+
+.header-content > img {
+    position: relative;
+    top: 6.5rem;
+    height: 38rem;
+}
+
+
+/* Media queries */
+
+/* Mobile: 375px */
+
+/* Desktop: 1440px */
+

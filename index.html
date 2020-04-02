@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Insure landing page</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -26,51 +24,56 @@
 <body>
   <!-- The blue background spans through the whole width -->
   <!-- Maybe a wrapper -->
-  <nav>
+  <div class="header-waves"></div>
+  <nav class="flex">
     <img src="/images/logo.svg" alt="Insure logo" srcset="">
-    <div>
-      <li>How we work</li>
-      <li>Blog</li>
-      <li>Account</li>
-      <li>View plans</li>
+    <div class="flex row">
+      <li> <a href="">How we work</a></li>
+      <li> <a href="">Blog</a></li>
+      <li> <a href="">Account</a></li>
+      <li><a class="button-link" href="">View plans</a></li>
     </div>
   </nav>
   <div class="header">
-    <!-- ask or search how to do that line. -->
-    <div>
-      <h1>Humanizing your insurance.</h1>
+  
+    <div class="wrapper">
+      <div class="header-content flex row">
+        <div>
+          <h1>Humanizing your insurance.</h1>
 
-      <p>Get your life insurance coverage easier and faster. We blend our expertise
-        and technology to help you find the plan that’s right for you. Ensure you
-        and your loved ones are protected.</p>
+          <p>Get your life insurance coverage easier and faster. We blend our expertise
+            and technology to help you find the plan that’s right for you. Ensure you
+            and your loved ones are protected.</p>
 
-      <button>View plans</button>
+          <a class="button-link" href="">View plans</a>
+        </div>
+        <!-- The image is applied on CSS, I think. There's to variants. Desktop and mobile. This is a placeholder. -->
+        <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
+      </div>
     </div>
-    <!-- The image is applied on CSS, I think. There's to variants. Desktop and mobile. This is a placeholder. -->
-    <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
   </div>
-
+  <div class="header-waves-left"></div>
   <!-- Beginning of section two -->
   <div>
     <br>
     <!-- line up -->
     <h2>We’re different</h2>
   </div>
-  <div>
-    <card>
+  <div class="flex row">
+    <card class="card flex column">
       <img src="/images/icon-snappy-process.svg" alt="" srcset="">
       <h3>Snappy Process</h3>
       <p>Our application process can be completed in minutes, not hours. Don’t get
         stuck filling in tedious forms.</p>
     </card>
-    <card>
+    <card class="card flex column">
       <img src="images/icon-affordable-prices.svg" alt="" srcset="">
       <h3>Affordable Prices</h3>
       <p>We don’t want you worrying about high monthly costs. Our prices may be low,
         but we still offer the best coverage possible.
       </p>
     </card>
-    <card>
+    <card class="card flex column">
       <img src="/images/icon-people-first.svg" alt="">
       <h3>People First</h3>
 
@@ -78,11 +81,10 @@
         sure you’re covered when you need it.</p>
     </card>
   </div>
-
   <!-- End of section two -->
 
   <!-- Beginning of section three -->
-  <div class="banner">
+  <div class="banner flex row">
     <h2>Find out more about how we work</h2>
     <button>How we work</button>
   </div>
@@ -92,7 +94,7 @@
   <!-- Beginning of footer -->
 
   <footer>
-    <div class="upper-footer">
+    <div class="upper-footer flex row">
       <img src="/images/logo.svg" alt="" srcset="">
       <div class="social">
         <li><img src="/images/icon-facebook.svg" alt="Facebook icon" srcset=""></li>
@@ -101,28 +103,28 @@
         <li><img src="/images/icon-instagram.svg" alt="Instagram icon" srcset=""></li>
       </div>
     </div>
-    <div class="lower-footer">
-      <div>
+    <div class="lower-footer flex row">
+      <div class="flex column">
         <h3>Our company</h3>
         <li>How we work</li>
         <li>Why Insure?</li>
         <li>View plans</li>
         <li>Reviews</li>
       </div>
-      <div>
+      <div class="flex column">
         <h3>Help me</h3>
         <li>FAQ</li>
         <li>Terms of use</li>
         <li>Privacy policy</li>
         <li>Cookies</li>
       </div>
-      <div>
+      <div class="flex column">
         <h3>Contact</h3>
         <li>Sales</li>
         <li>Support</li>
         <li>Live chat</li>
       </div>
-      <div>
+      <div class="flex column">
         <h3>Others</h3>
         <li>Careers</li>
         <li>Press</li>
