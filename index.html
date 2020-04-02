@@ -1,85 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Insure landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <!-- The blue background spans through the whole width -->
+  <!-- Maybe a wrapper -->
+  <nav>
+    <img src="/images/logo.svg" alt="Insure logo" srcset="">
+    <div>
+      <li>How we work</li>
+      <li>Blog</li>
+      <li>Account</li>
+      <li>View plans</li>
+    </div>
+  </nav>
+  <div class="header">
+    <!-- ask or search how to do that line. -->
+    <div>
+      <h1>Humanizing your insurance.</h1>
 
-  How we work
-  Blog
-  Account
-  View plans
+      <p>Get your life insurance coverage easier and faster. We blend our expertise
+        and technology to help you find the plan that’s right for you. Ensure you
+        and your loved ones are protected.</p>
 
-  Humanizing your insurance.
+      <button>View plans</button>
+    </div>
+    <!-- The image is applied on CSS, I think. There's to variants. Desktop and mobile. This is a placeholder. -->
+    <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
+  </div>
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+  <!-- Beginning of section two -->
+  <div>
+    <br>
+    <!-- line up -->
+    <h2>We’re different</h2>
+  </div>
+  <div>
+    <card>
+      <img src="/images/icon-snappy-process.svg" alt="" srcset="">
+      <h3>Snappy Process</h3>
+      <p>Our application process can be completed in minutes, not hours. Don’t get
+        stuck filling in tedious forms.</p>
+    </card>
+    <card>
+      <img src="images/icon-affordable-prices.svg" alt="" srcset="">
+      <h3>Affordable Prices</h3>
+      <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+        but we still offer the best coverage possible.
+      </p>
+    </card>
+    <card>
+      <img src="/images/icon-people-first.svg" alt="">
+      <h3>People First</h3>
 
-  View plans
+      <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+        sure you’re covered when you need it.</p>
+    </card>
+  </div>
 
-  We’re different
+  <!-- End of section two -->
 
-  Snappy Process
+  <!-- Beginning of section three -->
+  <div class="banner">
+    <h2>Find out more about how we work</h2>
+    <button>How we work</button>
+  </div>
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
+  <!-- End of section three -->
 
-  Affordable Prices
+  <!-- Beginning of footer -->
 
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
+  <footer>
+    <div class="upper-footer">
+      <img src="/images/logo.svg" alt="" srcset="">
+      <div class="social">
+        <li><img src="/images/icon-facebook.svg" alt="Facebook icon" srcset=""></li>
+        <li><img src="/images/icon-twitter.svg" alt="Twitter icon" srcset=""></li>
+        <li><img src="/images/icon-pinterest.svg" alt="Pinterest icon" srcset=""></li>
+        <li><img src="/images/icon-instagram.svg" alt="Instagram icon" srcset=""></li>
+      </div>
+    </div>
+    <div class="lower-footer">
+      <div>
+        <h3>Our company</h3>
+        <li>How we work</li>
+        <li>Why Insure?</li>
+        <li>View plans</li>
+        <li>Reviews</li>
+      </div>
+      <div>
+        <h3>Help me</h3>
+        <li>FAQ</li>
+        <li>Terms of use</li>
+        <li>Privacy policy</li>
+        <li>Cookies</li>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <li>Sales</li>
+        <li>Support</li>
+        <li>Live chat</li>
+      </div>
+      <div>
+        <h3>Others</h3>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Licenses</li>
+      </div>
+    </div>
+  </footer>
 
-  People First
+  <!-- End of footer -->
 
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
 
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Lenin A. Nava</a>.
   </div>
 </body>
+
 </html>
