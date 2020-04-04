@@ -129,6 +129,7 @@ a {
     top: 23.7rem;
     height: 34rem;
     z-index: 3;
+    pointer-events: none;
 }
 
 
