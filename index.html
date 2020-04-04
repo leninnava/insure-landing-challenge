@@ -24,7 +24,7 @@
 <body>
   <!-- The blue background spans through the whole width -->
   <!-- Maybe a wrapper -->
-  <div class="header-waves"></div>
+  
   <nav class="flex">
     <img src="/images/logo.svg" alt="Insure logo" srcset="">
     <div class="flex row">
@@ -34,9 +34,9 @@
       <li><a class="button-link" href="">View plans</a></li>
     </div>
   </nav>
-  <div class="header">
-  
+  <div id="header">
     <div class="wrapper">
+      <svg class="header-waves"></svg>
       <div class="header-content flex row">
         <div>
           <h1>Humanizing your insurance.</h1>
@@ -47,40 +47,42 @@
 
           <a class="button-link" href="">View plans</a>
         </div>
-        <!-- The image is applied on CSS, I think. There's to variants. Desktop and mobile. This is a placeholder. -->
+        <!-- The image is applied on CSS, I think. There's two variants. Desktop and mobile. This is a placeholder. -->
         <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
       </div>
+      <svg class="header-waves-left"></svg>
     </div>
   </div>
-  <div class="header-waves-left"></div>
+  
   <!-- Beginning of section two -->
-  <div>
-    <br>
-    <!-- line up -->
+  <div id="plans-section">
+  <div class="wrapper">
     <h2>We’re different</h2>
+    <div class="flex row">
+      <card class="card flex column">
+        <img src="/images/icon-snappy-process.svg" alt="" srcset="">
+        <h3>Snappy Process</h3>
+        <p>Our application process can be completed in minutes, not hours. Don’t get
+          stuck filling in tedious forms.</p>
+      </card>
+      <card class="card flex column">
+        <img src="images/icon-affordable-prices.svg" alt="" srcset="">
+        <h3>Affordable Prices</h3>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+          but we still offer the best coverage possible.
+        </p>
+      </card>
+      <card class="card flex column">
+        <img src="/images/icon-people-first.svg" alt="">
+        <h3>People First</h3>
+  
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+          sure you’re covered when you need it.</p>
+      </card>
+    </div>
   </div>
-  <div class="flex row">
-    <card class="card flex column">
-      <img src="/images/icon-snappy-process.svg" alt="" srcset="">
-      <h3>Snappy Process</h3>
-      <p>Our application process can be completed in minutes, not hours. Don’t get
-        stuck filling in tedious forms.</p>
-    </card>
-    <card class="card flex column">
-      <img src="images/icon-affordable-prices.svg" alt="" srcset="">
-      <h3>Affordable Prices</h3>
-      <p>We don’t want you worrying about high monthly costs. Our prices may be low,
-        but we still offer the best coverage possible.
-      </p>
-    </card>
-    <card class="card flex column">
-      <img src="/images/icon-people-first.svg" alt="">
-      <h3>People First</h3>
-
-      <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
-        sure you’re covered when you need it.</p>
-    </card>
-  </div>
+</div>
+ 
   <!-- End of section two -->
 
   <!-- Beginning of section three -->
