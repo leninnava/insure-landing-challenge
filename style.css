@@ -63,6 +63,8 @@ html {
 
 
 
+
+
 /* Base styling */
 
 body {
@@ -96,7 +98,15 @@ a {
     text-transform: uppercase;
     font-size: .8rem;
     font-weight: 700;
-    letter-spacing: .07rem;
+    letter-spacing: .05rem;
+    text-decoration: none;
+}
+
+.link {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
     text-decoration: none;
 }
 
@@ -199,11 +209,11 @@ h1::before {
 }
 
 .header-content > div > p {
-    font-size: .95rem;
+    font-size: .9rem;
     line-height: 1.6rem;
     margin-bottom: 2.2rem;
     margin-right: 1rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .header-content > img {
@@ -225,8 +235,9 @@ h1::before {
 
 .card {
     width: auto;
-    flex: 1 0;
+    flex: 0 1 20rem;
 }
+
 
 
 .card > img {
@@ -236,13 +247,13 @@ h1::before {
 
 .card > h3 {
     font-size: 1.6rem;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .card > p {
     line-height: 1.6rem;
-    font-size: .95rem;
-    padding-right: 1.2rem;
+    font-size: .9rem;
 }
 
 #plans-section > .wrapper > h2::before {
@@ -255,9 +266,45 @@ h1::before {
     opacity: 50%;
 }
 
+/* Banner section */
+
+#banner {
+    background: var(--primary-color-darkviolet);
+    flex: 0 1 auto;
+}
+
+#banner > div > h2 {
+    color: var(--neutral-color-verylightgray);
+    
+}
+
+
+/* Footer */
+
+footer {
+    background: rgb(230, 230, 230);
+    width: 100%;
+}
+
+footer > .wrapper > .upper-footer {
+    border-bottom: solid var(--neutral-color-verylightgray) 1px ;
+}
+
+/* Links (text) from navbar, buttons and footer use similar styling. Refactor */
+
+
+
+
 /* Media queries */
 
 /* Mobile: 375px */
 
 /* Desktop: 1440px */
 
+
+
+/* Extract all variants of link buttons, header colors etc into utility classes when you finish */
+
+/* Reduce  */
+
+/* WIP */

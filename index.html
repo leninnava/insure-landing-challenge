@@ -33,6 +33,7 @@
       <li> <a href="">Account</a></li>
       <li><a class="button-link" href="">View plans</a></li>
     </div>
+    <!-- Footer needs some big-ass refactoring, here and in css file -->
   </nav>
   <div id="header">
     <div class="wrapper">
@@ -86,9 +87,11 @@
   <!-- End of section two -->
 
   <!-- Beginning of section three -->
-  <div class="banner flex row">
+  <div id="banner" class="wrapper">
+    <div class="flex row">
     <h2>Find out more about how we work</h2>
-    <button>How we work</button>
+    <a class="button-link"href="">How we work</a>
+  </div>
   </div>
 
   <!-- End of section three -->
@@ -96,9 +99,10 @@
   <!-- Beginning of footer -->
 
   <footer>
+    <div class="wrapper">
     <div class="upper-footer flex row">
       <img src="/images/logo.svg" alt="" srcset="">
-      <div class="social">
+      <div class="social flex row">
         <li><img src="/images/icon-facebook.svg" alt="Facebook icon" srcset=""></li>
         <li><img src="/images/icon-twitter.svg" alt="Twitter icon" srcset=""></li>
         <li><img src="/images/icon-pinterest.svg" alt="Pinterest icon" srcset=""></li>
@@ -107,32 +111,33 @@
     </div>
     <div class="lower-footer flex row">
       <div class="flex column">
-        <h3>Our company</h3>
-        <li>How we work</li>
-        <li>Why Insure?</li>
-        <li>View plans</li>
-        <li>Reviews</li>
+        <h3 class="link">Our company</h3>
+        <a>How we work</a>
+        <a>Why Insure?</a>
+        <a>View plans</a>
+        <a>Reviews</a>
       </div>
       <div class="flex column">
-        <h3>Help me</h3>
-        <li>FAQ</li>
-        <li>Terms of use</li>
-        <li>Privacy policy</li>
-        <li>Cookies</li>
+        <h3 class="link">Help me</h3>
+        <a>FAQ</a>
+        <a>Terms of use</a>
+        <a>Privacy policy</a>
+        <a>Cookies</a>
       </div>
       <div class="flex column">
-        <h3>Contact</h3>
-        <li>Sales</li>
-        <li>Support</li>
-        <li>Live chat</li>
+        <h3 class="link">Contact</h3>
+        <a>Sales</a>
+        <a>Support</a>
+        <a>Live chat</a>
       </div>
       <div class="flex column">
-        <h3>Others</h3>
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Licenses</li>
+        <h3 class="link">Others</h3>
+        <a>Careers</a>
+        <a>Press</a>
+        <a>Licenses</a>
       </div>
     </div>
+  </div>
   </footer>
 
   <!-- End of footer -->
