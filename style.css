@@ -61,8 +61,25 @@ html {
     height: 18rem;
 }
 
+.margin-vertical {
+    margin-left: 1.6rem;
+}
 
+.dark {
+  color: var(--neutral-color-verydarkviolet);
+}
 
+.light {
+    color: var(--neutral-color-darkgrayishviolet);
+}
+
+.header-large {
+    font-size: 4.2rem;
+}
+
+.header-small {
+    font-size: 1.6rem;
+}
 
 
 /* Base styling */
@@ -71,12 +88,16 @@ body {
     font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: var(--base-font-size);
-    background: var(--neutral-color-verylightgray);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 1;
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.6rem;
 }
 
 h1,h2,h3 {
@@ -87,11 +108,6 @@ h1,h2,h3 {
     margin-bottom: 1.2rem;
     padding-right: 2rem;
     margin-right: 1rem;
-    color: var(--neutral-color-verydarkviolet);
-}
-
-p {
-    color: var(--neutral-color-darkgrayishviolet);
 }
 
 a {
@@ -106,15 +122,6 @@ span {
     display: inline-block;
 }
 .link {
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: 700;
-    letter-spacing: .05rem;
-    text-decoration: none;
-    color: rgb(154, 154, 154);
-    margin: 0;
-    padding: 0;
-    font-family: "Karla", sans-serif;
 }
 
 /* Nav and header */
@@ -163,17 +170,18 @@ nav {
     height: 4.7rem;
     width: 100%;
     padding: 0 11%;
-    background: var(--neutral-color-verylightgray);
     z-index: 4;
+    background: white;
 }
 
-nav > div > li > a {
-    margin-left: 1.6rem;
-    color: var(--neutral-color-darkgrayishviolet);
-}
 
-nav > div > li > a:hover {
+
+.link.light:hover {
     color: var(--neutral-color-verydarkviolet);
+}
+
+.link.dark:hover {
+    color: #fff;
 }
 
 .button-link {
@@ -211,13 +219,9 @@ h1::before {
     top: 6.5rem;
 }
 
-.header-content > div > * {
-    color: var(--neutral-color-verylightgray);
-}
+
 
 .header-content > div > p {
-    font-size: .9rem;
-    line-height: 1.6rem;
     margin-bottom: 2.2rem;
     margin-right: 1rem;
     padding-right: 2rem;
@@ -285,14 +289,11 @@ h1::before {
     margin-bottom: 10rem;
 }
 
-#banner > div > h2 {
-    color: var(--neutral-color-verylightgray);
-    
-}
 
 .banner-header {
     font-size: 3.2rem;
     margin: 0;
+    color: #fff;
 }
 
 .banner-button {
@@ -320,7 +321,7 @@ h1::before {
 /* Footer */
 
 footer {
-    background: rgb(230, 230, 230);
+    background: rgb(250, 250, 250);
     width: 100%;
 }
 
@@ -345,10 +346,11 @@ footer > .wrapper > .upper-footer {
 
 .footer-link {
   margin-bottom: 1rem;  
+  color: var(--primary-color-darkviolet);
 }
 
 /* Links (text) from navbar, buttons and footer use similar styling. Refactor */
-
+  /* Buttons, refactor light-dark */
 
 
 
